@@ -1,3 +1,11 @@
+const secret_data = JSON.parse('assets/secret/config.json');
+
+const redirect_uri = "https://j00walling.github.io/john-walling/";
+const client_id = secret_data[0].CLIENT_ID;
+const client_secret = secret_data[0].CLIENT_SECRET;
+console.log(client_id);
+console.log(client_secret);
+
 window.onSpotifyWebPlaybackSDKReady = () => {
     const token = 'BQA1ULpF6fdtkSesAtjxTIKrj_vYHzX3U1HaFraJK-siSbZVsm9Ud44WHxXIpLzwcE26fOqKf7t1KGFEqlkAXl20elk7NqTjQqtgqnNgldcgxszPUglO8J2xeV3QBq6oQxQ2KfOjHLHwdFwhu0psSYk3AHMCmdTco_gy'
     const player = new Spotify.Player({
