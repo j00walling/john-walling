@@ -1,0 +1,140 @@
+/***** General *****/
+h1, h4 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: #fff;
+    text-align: center;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #fff
+}
+
+/***** NavBar *****/
+.navbar {
+    background: #444;
+    -o-transition: all .6s;
+    -moz-transition: all .6s;
+    -webkit-transition: all .6s;
+    -ms-transition: all .6s;
+    transition: all .6s;
+    backface-visibility: hidden;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+}
+ 
+.navbar-dark .navbar-nav {
+    font-size: 15px;
+    color: #fff;
+}
+ 
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+    color: rgba(255, 255, 255, 0.8);
+    border: 0;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #fff;
+}
+ 
+.navbar-dark .navbar-nav .nav-link:focus {
+    color: #fff;
+    outline: 0;
+}
+ 
+.navbar-expand-md .navbar-nav .nav-link {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.navbar-brand {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/***** Sections *****/
+.section-container {
+    margin: 0 auto;
+    padding-bottom: 90px
+}
+
+/***** Top *****/
+
+.top-container {
+    padding-top: 260px;
+    padding-bottom: 260px;
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.top-container .text h1 {
+	color: #fff;
+    font-size: 90px;
+    font-weight: 300;
+}
+
+
+/***** About *****/
+
+.about-container {
+    padding: 80px;
+    background-color: #152a33;
+}
+
+.about-me-text p {
+    margin-top: 20px;
+}
+
+.profile-pic img {
+    height: auto;
+    max-width: 70%;
+    border: 2px solid #fff;
+    margin-left: 25px;
+}
+
+.socials {
+    margin-top: 25px; 
+    flex-direction: row;
+    text-align: center;
+}
+
+.socials a {
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 15px;
+}
+
+.socials img {
+    width: 2rem;
+}
+
+/***** Projects *****/
+
+.projects-container {
+    padding: 80px;
+    background-color: #43666a;
+}
+
+/***** Hobbies *****/
+
+.hobbies-container {
+    padding: 80px;
+    background-color: #091d28;
+}
+
+.hobbie {
+    padding: 20px 3px;
+    background-color: #0d2834;
+    border: 1px solid #fff;
+}
+
+.skate-video img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.3rem;
+}
