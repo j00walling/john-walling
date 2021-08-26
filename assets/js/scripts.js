@@ -5,7 +5,7 @@
 // const client_data = JSON.parse(JSON.parse(request.responseText));
 // console.log(client_data);
 
-const redirect_uri = "http://127.0.0.1:5500/index.html";
+const redirect_uri = "https://j00walling.github.io/john-walling/";
 const client_id = config.CLIENT_ID;
 const client_secret = config.CLIENT_SECRET;
 

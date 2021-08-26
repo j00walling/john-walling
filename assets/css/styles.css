@@ -17,7 +17,7 @@ body {
 
 /***** NavBar *****/
 .navbar {
-    background: #444;
+    background: #0a1f2a;
     -o-transition: all .6s;
     -moz-transition: all .6s;
     -webkit-transition: all .6s;
@@ -67,13 +67,15 @@ body {
 /***** Top *****/
 
 .top-container {
-    padding-top: 260px;
+    padding-top: 500px;
     padding-bottom: 260px;
     background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .top-container .text h1 {
 	color: #fff;
+    position: relative;
+    bottom: 245px;
     font-size: 90px;
     font-weight: 300;
 }
@@ -83,29 +85,51 @@ body {
 
 .about-container {
     padding: 80px;
-    background-color: #152a33;
+    background-color: #44686c;
+}
+
+.about-display {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.profile-pic {
+    flex: 50%;
+    margin-bottom: 25px;
+   
+    text-align: center;
+    flex-direction: column;
+}
+
+.profile-pic img {
+    max-width: 100%;
+    width: 65vh;
+    height: auto;
+    border: 2px solid #fff;
+}
+
+.about-me-text {
+    inline-size: 500px;
+    overflow-wrap: break-word;
+    text-align: left;
+    flex-direction: column;
 }
 
 .about-me-text p {
     margin-top: 20px;
 }
 
-.profile-pic img {
-    height: auto;
-    max-width: 70%;
-    border: 2px solid #fff;
-    margin-left: 25px;
-}
-
 .socials {
     margin-top: 25px;
     flex-direction: row;
-    text-align: center;
+    text-align: left;
 }
 
 .socials a {
     text-decoration: none;
-    margin: 0 10px;
+    /* margin: 0 10px; */
+    margin-right: 20px;
     font-size: 15px;
 }
 
@@ -117,7 +141,7 @@ body {
 
 .projects-container {
     padding: 35px;
-    background-color: #4d747f;
+    background-color: #223444;
 }
 
 .projects-display {
@@ -154,22 +178,24 @@ body {
 
 .hobbies-container {
     padding: 35px;
-    background-color: #091d28;
+    background-color: #141b24;
 }
 
 .hobbie {
     padding-top: 15px;
     padding-left: 3px;
     padding-bottom: 15px;
-    background-color: #0d2834;
+    background-color: #9c7c7a;
     border: 1px solid #fff;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .skate-video img {
     max-width: 100%;
+    min-width: 100%;
     height: auto;
     border-radius: 0.3rem;
+    
 }
 
 .playback-controls {
@@ -189,4 +215,27 @@ body {
     /* margin-top: 0.5rem; */
     vertical-align: middle;
     display: inline;
+}
+
+.hiking {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.hiking-slideshow {
+    max-width: 100%;
+    height: auto;
+}
+
+.hiking-explanation {
+    text-align: left;
+}
+
+.carousel-item img {
+    border-radius: 0.3rem;
+}
+
+/***** Footer *****/
+.footer {
+    background-color: #0a1f2a !important;
 }
