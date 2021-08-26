@@ -5,7 +5,7 @@
 // const client_data = JSON.parse(JSON.parse(request.responseText));
 // console.log(client_data);
 
-const redirect_uri = "https://j00walling.github.io/john-walling/";
+const redirect_uri = "http://127.0.0.1:5500/";
 const client_id = config.CLIENT_ID;
 const client_secret = config.CLIENT_SECRET;
 
@@ -163,6 +163,9 @@ function getPlaylist() {
 function handleGetPlaylist() {
   if (this.status == 200) {
     SONG_LIST = JSON.parse(this.responseText);
+  }
+  else if (this.status == 401) {
+    refreshAccessToken();
   }
   else {
     console.log(this.responseText);
