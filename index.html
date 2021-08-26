@@ -92,9 +92,37 @@
 
     <!-- Projects content -->
     <div class="projects-container section-container">
-        <div class="container">
-            
+        <div class="title">
+            <h3 class="text-center">Projects</h3>
         </div>
+        <div class="projects-display">
+            <div class="project">
+                <h5>Discord Bot</h5>
+                <p></p>
+                <p>I created a discord bot called "<a href="https://discord.com/api/oauth2/authorize?client_id=855685328558751744&permissions=8&scope=bot" style="color: #fff;">Bool Bot</a>" that my friends and I could use in our discord server. I programmed the bot with commands that brought inside jokes to life.</p>
+                <p>Tools Used: Python</p>
+                <p></p>
+                <a class="github-button" href="https://github.com/j00walling/bool-bot">Github Link</a>
+            </div>
+            <div class="project">
+                <h5>Upsilon Website</h5>
+                <p></p>
+                <p>I helped create a website to showcase my class (Upsilon) in the fraternity, Theta Tau. The website displays our class project, our biographies, as well as some memorable pictures.</p>
+                <p>Tools Used: HTML, CSS, JavaScript, Bootstrap</p>
+                <p></p>
+                <a class="github-button" href="https://github.com/leebahir/Upsilon-Website/deployments/activity_log?environment=github-pages">Github Link</a>
+                <a class="github-button" href="https://leebahir.github.io/Upsilon-Website/index.html">Website Link</a>
+            </div>
+            <div class="project">
+                <h5>Personal Website</h5>
+                <p></p>
+                <p>I created the website you are looking at now to display a little bit about me. Thanks so much for stopping by!</p>
+                <p>Tools Used: HTML, CSS, JavaScript, Bootstrap, Spotify API</p>
+                <a class="github-button" href="https://github.com/j00walling/john-walling">Github Link</a>
+                <a class="github-button" href="https://j00walling.github.io/john-walling/">Website Link</a>
+            </div>
+        </div>
+        
     </div>
 
     <!-- Hobbies content -->
@@ -126,7 +154,15 @@
             </div>
             <div class="row hobbie justify-content-center">
                 <div class="col">
-                    <button class='playback'></button>
+                    <div class="playback-controls">
+                        <input type="image" class="playback" src="assets/img/iconmonstr-video-15-240.png">
+                        <input type="image" class="skip" src="assets/img/iconmonstr-media-control-13-240.png">
+                        <div id="what-is-playing">
+                            <span id="trackTitle">Nothing is playing...</div>
+                            <span id="by"></span>
+                            <span id="trackArtist"></div>
+                        </div>
+                    </div>
                 </div>
                 <div class="col">
 
