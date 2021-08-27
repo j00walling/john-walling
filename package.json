@@ -1,0 +1,37 @@
+{
+  "name": "john-walling",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "audit": "^0.0.6",
+    "config": "^3.3.6",
+    "dotenv": "^10.0.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "extends": "0.0.4",
+    "get": "^1.4.0",
+    "listen": "^1.0.1",
+    "process": "^0.11.10",
+    "render": "^0.1.4",
+    "require": "^2.4.20",
+    "set": "^1.1.1",
+    "uglify-js": "^3.14.1",
+    "use": "^3.1.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/j00walling/john-walling.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/j00walling/john-walling/issues"
+  },
+  "homepage": "https://github.com/j00walling/john-walling#readme"
+}

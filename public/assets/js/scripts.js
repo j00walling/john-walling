@@ -5,9 +5,18 @@
 // const client_data = JSON.parse(JSON.parse(request.responseText));
 // console.log(client_data);
 
-const redirect_uri = "https://j00walling.github.io/john-walling/";
-const client_id = config.CLIENT_ID;
-const client_secret = config.CLIENT_SECRET;
+
+
+const redirect_uri = "http://localhost:8080/";
+
+// const db = require('db');
+// db.connect({
+//   client_id: process.env.CLIENT_ID,
+//   client_secret: process.env.CLIENT_SECRET
+// })
+
+// const client_id = process.env.CLIENT_ID;
+// const client_secret = process.env.CLIENT_SECRET;
 
 var URIS = {};
 var SONG_LIST = null;
