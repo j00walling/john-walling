@@ -7,7 +7,7 @@
 
 
 
-const redirect_uri = "http://localhost:8080/";
+const redirect_uri = "https://john-walling.herokuapp.com/";
 
 // const db = require('db');
 // db.connect({
