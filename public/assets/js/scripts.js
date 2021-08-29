@@ -5,8 +5,6 @@
 // const client_data = JSON.parse(JSON.parse(request.responseText));
 // console.log(client_data);
 
-
-
 // const redirect_uri = "http://localhost:8080/";
 
 // // const db = require('db');
@@ -69,7 +67,7 @@
 
 // function fetchAccessToken( code ){
 //   let body = "grant_type=authorization_code";
-//   body += "&code=" + code; 
+//   body += "&code=" + code;
 //   body += "&redirect_uri=" + encodeURI(redirect_uri);
 //   body += "&client_id=" + client_id;
 //   body += "&client_secret=" + client_secret;
@@ -129,7 +127,7 @@
 //   else {
 //       console.log(this.responseText);
 //       onPageLoad();
-//   }    
+//   }
 // }
 
 // // function getRecentlyPlayed(){
@@ -199,32 +197,32 @@
 // // }
 
 // window.onSpotifyWebPlaybackSDKReady = () => {
-//     const token = localStorage.getItem("access_token")
-//     var DEVICE_ID;
-//     const player = new Spotify.Player({
-//       name: 'John\'s Website',
-//       getOAuthToken: cb => { cb(token); }
-//     });
-  
-//     // Ready
-//     player.addListener('ready', ({ device_id }) => {
-//       DEVICE_ID = device_id;
-//       console.log('Ready with Device ID', device_id);
-//     });
-  
-//     // Not Ready
-//     player.addListener('not_ready', ({ device_id }) => {
-//       console.log('Device ID has gone offline', device_id);
-//     });
 
-//     player.addListener('player_state_changed', ({
-//       position,
-//       duration,
-//       track_window: { current_track }
-//     }) => { 
+//   var DEVICE_ID;
+//   const player = new Spotify.Player({
+//     name: "John's Website",
+//     getOAuthToken: (cb) => {
+//       cb(ACCESS_TOKEN);
+//     },
+//   });
+
+//   // Ready
+//   player.addListener("ready", ({ device_id }) => {
+//     DEVICE_ID = device_id;
+//     console.log("Ready with Device ID", device_id);
+//   });
+
+//   // Not Ready
+//   player.addListener("not_ready", ({ device_id }) => {
+//     console.log("Device ID has gone offline", device_id);
+//   });
+
+//   player.addListener(
+//     "player_state_changed",
+//     ({ position, duration, track_window: { current_track } }) => {
 //       document.getElementById("trackTitle").innerHTML = current_track.name;
 //       document.getElementById("by").innerHTML = " - ";
-      
+
 //       let temp = "";
 //       for (let i = 0; i < current_track.artists.length; i++) {
 //         temp += current_track.artists[i].name;
@@ -232,67 +230,80 @@
 //       }
 
 //       artists = temp.slice(0, -2);
-      
+
 //       document.getElementById("trackArtist").innerHTML = artists;
-//     });
-  
-//     // Connect to the player!
-//     player.connect().then(success => {
-//       if (success) {
-//         console.log('The Web Playback SDK successfully connected to Spotify!');
-//         console.log(SONG_LIST);
-//         for (let i = 0; i < SONG_LIST.tracks.items.length; i++) {
-//           BODY[i] = SONG_LIST.tracks.items[i].track.uri;
-//         }
-//         URIS.uris = BODY;
-//       }
-//     })
-  
-//     $('.playback').on('click', function() {
-//       pic = document.getElementsByClassName("playback");
-      
-//       if (pic[0].src == "http://127.0.0.1:5500/assets/img/iconmonstr-video-15-240.png") {
-//         pic[0].src = "http://127.0.0.1:5500/assets/img/iconmonstr-media-control-8-240.png";
+//     }
+//   );
 
-//         if (document.getElementById("by").innerHTML == "") {
-//           play(DEVICE_ID, JSON.stringify(URIS));
-//         }
-//         else {
-//           callApi("PUT", "https://api.spotify.com/v1/me/player/play?device_id=" + DEVICE_ID, null, handleApiResponse);
-//         }
+//   // Connect to the player!
+//   player.connect().then((success) => {
+//     if (success) {
+//       console.log("The Web Playback SDK successfully connected to Spotify!");
+//       console.log(SONG_LIST);
+//       for (let i = 0; i < SONG_LIST.tracks.items.length; i++) {
+//         BODY[i] = SONG_LIST.tracks.items[i].track.uri;
 //       }
-//       else {
-//         pic[0].src = "http://127.0.0.1:5500/assets/img/iconmonstr-video-15-240.png";
-//         pause(DEVICE_ID);
-//       } 
-//     });
+//       URIS.uris = BODY;
+//     }
+//   });
 
-//     $('.skip').on('click', function() {
-//       skip(DEVICE_ID);
-//       if (pic[0].src == "http://127.0.0.1:5500/assets/img/iconmonstr-video-15-240.png") {
-//         pic[0].src = "http://127.0.0.1:5500/assets/img/iconmonstr-media-control-8-240.png";
+//   $(".playback").on("click", function () {
+//     pic = document.getElementsByClassName("playback");
+
+//     if (
+//       pic[0].src ==
+//       "http://127.0.0.1:5500/assets/img/iconmonstr-video-15-240.png"
+//     ) {
+//       pic[0].src =
+//         "http://127.0.0.1:5500/assets/img/iconmonstr-media-control-8-240.png";
+
+//       if (document.getElementById("by").innerHTML == "") {
+//         play(DEVICE_ID, JSON.stringify(URIS));
+//       } else {
+//         callApi(
+//           "PUT",
+//           "https://api.spotify.com/v1/me/player/play?device_id=" + DEVICE_ID,
+//           null,
+//           handleApiResponse
+//         );
 //       }
-//     });
-//   }
+//     } else {
+//       pic[0].src =
+//         "http://127.0.0.1:5500/assets/img/iconmonstr-video-15-240.png";
+//       pause(DEVICE_ID);
+//     }
+//   });
+
+//   $(".skip").on("click", function () {
+//     skip(DEVICE_ID);
+//     if (
+//       pic[0].src ==
+//       "http://127.0.0.1:5500/assets/img/iconmonstr-video-15-240.png"
+//     ) {
+//       pic[0].src =
+//         "http://127.0.0.1:5500/assets/img/iconmonstr-media-control-8-240.png";
+//     }
+//   });
+// };
 
 function scroll_to(clicked_link, nav_height) {
-    var element_class = clicked_link.attr('href').replace('#', '.');
-    var scroll_to = 0;
-    
-    element_class += '-container';
-    scroll_to = $(element_class).offset().top - nav_height;
-    
-    if($(window).scrollTop() != scroll_to) {
-        $('html, body').stop().animate({scrollTop: scroll_to}, 1000);
-    }
+  var element_class = clicked_link.attr("href").replace("#", ".");
+  var scroll_to = 0;
+
+  element_class += "-container";
+  scroll_to = $(element_class).offset().top - nav_height;
+
+  if ($(window).scrollTop() != scroll_to) {
+    $("html, body").stop().animate({ scrollTop: scroll_to }, 1000);
+  }
 }
 
-jQuery(document).ready(function() {
-    // navigation
-	$('a.scroll-link').on('click', function(e) {
-        e.preventDefault();
-        scroll_to($(this), $('nav').outerHeight());
-    });
-
-    $('.top-container').backstretch("assets/img/mountain.png");
+jQuery(document).ready(function () {
+  // navigation
+  $("a.scroll-link").on("click", function (e) {
+    e.preventDefault();
+    scroll_to($(this), $("nav").outerHeight());
   });
+
+  $(".top-container").backstretch("assets/img/mountain.png");
+});
