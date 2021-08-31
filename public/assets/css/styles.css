@@ -1,241 +1,239 @@
 /***** General *****/
-h1, h4 {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff
+h1,
+h4 {
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
 }
 
 h2 {
-    font-family: 'Montserrat', sans-serif;
-    color: #fff;
-    text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: #fff;
+  text-align: center;
 }
 
 body {
-    font-family: 'Raleway', sans-serif;
-    color: #fff
+  font-family: "Raleway", sans-serif;
+  color: #fff;
 }
 
 /***** NavBar *****/
 .navbar {
-    background: #0a1f2a;
-    -o-transition: all .6s;
-    -moz-transition: all .6s;
-    -webkit-transition: all .6s;
-    -ms-transition: all .6s;
-    transition: all .6s;
-    backface-visibility: hidden;
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
+  background: #0a1f2a;
+  -o-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  transition: all 0.6s;
+  backface-visibility: hidden;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
 }
- 
+
 .navbar-dark .navbar-nav {
-    font-size: 15px;
-    color: #fff;
+  font-size: 15px;
+  color: #fff;
 }
- 
+
 .navbar-dark .navbar-nav .nav-link {
-    color: #fff;
-    color: rgba(255, 255, 255, 0.8);
-    border: 0;
+  color: #fff;
+  color: rgba(255, 255, 255, 0.8);
+  border: 0;
 }
- 
+
 .navbar-dark .navbar-nav .nav-link:hover {
-    color: #fff;
+  color: #fff;
 }
- 
+
 .navbar-dark .navbar-nav .nav-link:focus {
-    color: #fff;
-    outline: 0;
+  color: #fff;
+  outline: 0;
 }
- 
+
 .navbar-expand-md .navbar-nav .nav-link {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .navbar-brand {
-    padding-left: 2rem;
-    padding-right: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 /***** Sections *****/
 .section-container {
-    margin: 0 auto;
-    padding-bottom: 90px
+  margin: 0 auto;
+  padding-bottom: 90px;
 }
 
 /***** Top *****/
 
 .top-container {
-    padding-top: 500px;
-    padding-bottom: 260px;
-    background: rgba(0, 0, 0, 0.6) !important;
+  padding-top: 700px;
+  padding-bottom: 260px;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 .top-container .text h1 {
-	color: #fff;
-    position: relative;
-    bottom: 245px;
-    font-size: 90px;
-    font-weight: 300;
+  color: #fff;
+  position: relative;
+  bottom: 300px;
+  font-size: 90px;
+  font-weight: 300;
 }
-
 
 /***** About *****/
 
 .about-container {
-    padding: 80px;
-    background-color: #44686c;
+  padding: 80px;
+  background-color: #44686c;
 }
 
 .about-display {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .profile-pic {
-    flex: 50%;
-    margin-bottom: 25px;
-   
-    text-align: center;
-    flex-direction: column;
+  flex: 50%;
+  margin-bottom: 25px;
+
+  text-align: center;
+  flex-direction: column;
 }
 
 .profile-pic img {
-    max-width: 100%;
-    width: 65vh;
-    height: auto;
-    border: 2px solid #fff;
+  max-width: 100%;
+  width: 65vh;
+  height: auto;
+  border: 2px solid #fff;
 }
 
 .about-me-text {
-    inline-size: 500px;
-    overflow-wrap: break-word;
-    text-align: left;
-    flex-direction: column;
+  inline-size: 500px;
+  overflow-wrap: break-word;
+  text-align: left;
+  flex-direction: column;
 }
 
 .about-me-text p {
-    margin-top: 20px;
+  margin-top: 20px;
 }
 
 .socials {
-    margin-top: 25px;
-    flex-direction: row;
-    text-align: left;
+  margin-top: 25px;
+  flex-direction: row;
+  text-align: left;
 }
 
 .socials a {
-    text-decoration: none;
-    /* margin: 0 10px; */
-    margin-right: 20px;
-    font-size: 15px;
+  text-decoration: none;
+  /* margin: 0 10px; */
+  margin-right: 20px;
+  font-size: 15px;
 }
 
 .socials img {
-    width: 2rem;
+  width: 2rem;
 }
 
 /***** Projects *****/
 
 .projects-container {
-    padding: 35px;
-    background-color: #223444;
+  padding: 35px;
+  background-color: #223444;
 }
 
 .projects-display {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
 }
 
 .project {
-    border: 1px solid #fff;
-    padding: 1rem;
-    margin: 25px;
-    background-color: #80a1a4; 
-    inline-size: 300px;
-    overflow-wrap: break-word;
+  border: 1px solid #fff;
+  padding: 1rem;
+  margin: 25px;
+  background-color: #80a1a4;
+  inline-size: 300px;
+  overflow-wrap: break-word;
 }
 
 .github-button {
-    color:#fff;
-    text-decoration: none;
-    text-align: center;
-    background-color: #608996;
-    padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  text-align: center;
+  background-color: #608996;
+  padding: 5px 10px;
 }
 
 .github-button:hover {
-    color: #fff;
-    text-decoration: none;
-    border: 1px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
 }
-
 
 /***** Hobbies *****/
 
 .hobbies-container {
-    padding: 35px;
-    background-color: #141b24;
+  padding: 35px;
+  background-color: #141b24;
 }
 
 .hobbie {
-    padding-top: 15px;
-    padding-left: 3px;
-    padding-bottom: 15px;
-    background-color: #9c7c7a;
-    border: 1px solid #fff;
-    margin-bottom: 40px;
+  padding-top: 15px;
+  padding-left: 3px;
+  padding-bottom: 15px;
+  background-color: #9c7c7a;
+  border: 1px solid #fff;
+  margin-bottom: 40px;
 }
 
 .skate-video img {
-    max-width: 100%;
-    min-width: 100%;
-    height: auto;
-    border-radius: 0.3rem;
-    
+  max-width: 100%;
+  min-width: 100%;
+  height: auto;
+  border-radius: 0.3rem;
 }
 
 .playback-controls {
-    flex-direction: row;
+  flex-direction: row;
 }
 
 .playback-controls input {
-    /* height: 35px; */
-    /* max-width: 100vw; */
-    /* height: 2rem; */
-    margin-right: 1.2rem;
-    width: 2rem;
-    vertical-align: middle;
+  /* height: 35px; */
+  /* max-width: 100vw; */
+  /* height: 2rem; */
+  margin-right: 1.2rem;
+  width: 2rem;
+  vertical-align: middle;
 }
 
 #what-is-playing {
-    /* margin-top: 0.5rem; */
-    vertical-align: middle;
-    display: inline;
+  /* margin-top: 0.5rem; */
+  vertical-align: middle;
+  display: inline;
 }
 
 .hiking {
-    display: flex;
-    flex-flow: row wrap;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .hiking-slideshow {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
 
 .hiking-explanation {
-    text-align: left;
+  text-align: left;
 }
 
 .carousel-item img {
-    border-radius: 0.3rem;
+  border-radius: 0.3rem;
 }
 
 /***** Footer *****/
 .footer {
-    background-color: #0a1f2a !important;
+  background-color: #0a1f2a !important;
 }
