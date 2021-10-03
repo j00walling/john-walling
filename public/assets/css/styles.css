@@ -68,15 +68,15 @@ body {
 /***** Top *****/
 
 .top-container {
-  padding-top: 700px;
-  padding-bottom: 260px;
-  background: rgba(0, 0, 0, 0.6) !important;
+  padding-top: 500px;
+  /* padding-bottom: 260px; */
 }
 
-.top-container .text h1 {
+.top-container h1 {
   color: #fff;
   position: relative;
-  bottom: 300px;
+  text-align: center;
+  bottom: 250px;
   font-size: 90px;
   font-weight: 300;
 }

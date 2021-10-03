@@ -20,4 +20,5 @@ app.get("/", function (req, res) {
 });
 
 // Port website will run on
-app.listen(process.env.PORT || 8888);
+app.listen(process.env.PORT || 8080);
+
